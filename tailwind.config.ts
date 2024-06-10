@@ -11,7 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         leaf: {
-            DEFAULT: '#25FF4F'
+            light: '#1EFA4A',
+            DEFAULT: '#25FF4F',
+            dark: '#19CF3D'
         }
       }
     },
