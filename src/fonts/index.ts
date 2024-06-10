@@ -1,3 +1,4 @@
-import localFont from 'next/font/local'
+import { Montserrat, Anton } from 'next/font/google'
 
-export const anton = localFont({ src: 'Anton-Regular.ttf' })
+export const anton = Anton({ subsets: ['latin'], weight: '400' })
+export const montserrat = Montserrat({ subsets: ['latin'] })

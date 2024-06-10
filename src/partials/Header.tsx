@@ -9,7 +9,7 @@ export default function Header() {
         </div>
         <menu className="flex items-center justify-center gap-x-5 mr-10">
             <li className="text-gray-400 font-bold hover:cursor-pointer hover:text-gray-600 hover:scale-110 text-xl transition-all"><a href="#product">Produto</a></li>
-            <li className="text-gray-400 font-bold hover:cursor-pointer hover:text-gray-600 hover:scale-110  text-xl transition-all">Como Funciona</li>
+            <li className="text-gray-400 font-bold hover:cursor-pointer hover:text-gray-600 hover:scale-110  text-xl transition-all"><a href="#how-it-works">Como Funciona</a></li>
             <li className="text-gray-400 font-bold hover:cursor-pointer hover:text-gray-600 hover:scale-110  text-xl transition-all">Apoie</li>
             <li className="text-gray-400 font-bold hover:cursor-pointer hover:text-gray-600 hover:scale-110  text-xl transition-all">Time</li>
         </menu>

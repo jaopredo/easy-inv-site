@@ -22,3 +22,26 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #7e7e7e;
 }
+
+
+.appear-animation {
+    animation: appear .7s linear 0s 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    50% {
+        opacity: .42;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
