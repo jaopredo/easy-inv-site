@@ -54,23 +54,23 @@ export default function Home() {
                         <div className="flex flex-col items-center md:items-start justify-center md:text-left text-center">
                             <h2 className={`${anton.className} text-leaf text-4xl text-center w-full`}>EasyInv Mobile</h2>
                             <ul className="flex flex-col items-center justify-center mt-5 gap-6">
-                                <li className="flex gap-4">
+                                <li className="flex gap-4 md:flex-row md:items-start md:justify-start flex-col items-center justify-center">
                                     <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaCamera className="text-white w-8 h-8"/></div>
-                                    <div>
+                                    <div className="text-center md:text-left">
                                         <h3 className={`text-leaf text-2xl ${anton.className}`}>LEITURA DINÂMICA</h3>
                                         <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Oferecerá uma leitura rápida dos códigos do patrimônio, seja QRCode, Código de Barras ou Placa com o Número digitado!</p>
                                     </div>
                                 </li>
-                                <li className="flex gap-4">
+                                <li className="flex gap-4 md:flex-row md:items-start md:justify-start flex-col items-center justify-center">
                                     <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaRegFileExcel className="text-white w-8 h-8"/></div>
-                                    <div>
-                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>LEITURA DINÂMICA</h3>
+                                    <div className="text-center md:text-left">
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>PLANILHAS</h3>
                                         <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Criação dinâmica de planilhas, você vai dizer o que vai ter nelas e o aplicativo cuida do resto na hora de preencher!</p>
                                     </div>
                                 </li>
-                                <li className="flex gap-4">
+                                <li className="flex gap-4 md:flex-row md:items-start md:justify-start flex-col items-center justify-center">
                                     <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaSyncAlt className="text-white w-8 h-8"/></div>
-                                    <div>
+                                    <div className="text-center md:text-left">
                                         <h3 className={`text-leaf text-2xl ${anton.className}`}>SÍNCRONIZAÇÃO COM A NUVEM</h3>
                                         <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Os projetos criados no aplicativo podem ser vinculados com os projetos criados no sistema web! Além de acompanhar em tempo-real sempre que atualiza o projeto dentro do aplicativo!</p>
                                     </div>
@@ -83,21 +83,21 @@ export default function Home() {
                         <div className="flex flex-col items-center md:items-start justify-center md:text-left text-center">
                             <h2 className={`${anton.className} text-leaf text-4xl text-center w-full`}>EasyInv Web</h2>
                             <ul className="flex flex-col items-center justify-center mt-5 gap-6">
-                                <li className="flex flex-row-reverse text-right gap-4">
+                                <li className="flex gap-4 md:flex-row-reverse md:items-start md:justify-start flex-col items-center justify-center md:text-right">
                                     <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><BsGraphUp className="text-white w-8 h-8"/></div>
                                     <div>
                                         <h3 className={`text-leaf text-2xl ${anton.className}`}>CRIAÇÃO DE GRÁFICOS</h3>
                                         <p className={`md:w-[32vw] block text-slate-700 ${montserrat.className}`}>Criação fácil de gráficos e relatórios, com pouquíssimos cliques, além de informações valiosas que vão te ajudar a economizar uma grana!</p>
                                     </div>
                                 </li>
-                                <li className="flex flex-row-reverse text-right gap-4">
+                                <li className="flex gap-4 md:flex-row-reverse md:items-start md:justify-start flex-col items-center justify-center md:text-right">
                                     <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaQrcode className="text-white w-8 h-8"/></div>
                                     <div>
                                         <h3 className={`text-leaf text-2xl ${anton.className}`}>CRIAÇÃO DE CÓDIGOS</h3>
                                         <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Criação dinâmica de códigos para ajudar na fabricação das placas de patrimônio!</p>
                                     </div>
                                 </li>
-                                <li className="flex flex-row-reverse text-right gap-4">
+                                <li className="flex gap-4 md:flex-row-reverse md:items-start md:justify-start flex-col items-center justify-center md:text-right">
                                     <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaShieldAlt className="text-white w-8 h-8"/></div>
                                     <div>
                                         <h3 className={`text-leaf text-2xl ${anton.className}`}>TOTALMENTE SEGURO</h3>
