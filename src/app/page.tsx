@@ -1,7 +1,6 @@
 import { anton, montserrat } from "@/fonts"
-import { FaInstagram, FaLinkedin } from "react-icons/fa"
-import { IoIosPhonePortrait } from "react-icons/io"
-import { HiOutlineComputerDesktop } from "react-icons/hi2"
+import { FaInstagram, FaLinkedin, FaSyncAlt, FaCamera, FaRegFileExcel, FaQrcode, FaShieldAlt } from "react-icons/fa"
+import { BsGraphUp } from "react-icons/bs"
 
 /* COMPONENTS */
 import Header from "@/partials/Header"
@@ -50,18 +49,62 @@ export default function Home() {
                 <h1 className="text-center font-bold text-3xl text-slate-800">Economize Dinheiro!</h1>
                 <p className="text-slate-500 md:text-xl text-md text-center md:w-[60vw] w-[89vw]">Nosso serviço irá cobrar apenas pelos recursos que utilizar, nada de pagar mensalidades mesmo quando não está usando o produto!</p>
                 <ul className="flex flex-col items-stretch w-full justify-evenly mt-10 md:gap-10">
-                    <li className="h-full flex md:flex-row flex-col items-stretch justify-evenly md:gap-5 w-full">
+                    <li className="h-full flex md:flex-row flex-col items-center justify-evenly md:gap-5 w-full">
                         <div className="bg-[url(/images/easy-inv-cellphone.svg)] bg-no-repeat bg-center bg-contain md:w-[34vw] md:h-72 w-[80vw] h-[90vw]"></div>
                         <div className="flex flex-col items-center md:items-start justify-center md:text-left text-center">
-                            <h2 className={`${anton.className} text-leaf text-4xl`}>EasyInv Mobile</h2>
-                            <p className={`w-[90vw] md:w-[30vw] text-slate-700 mt-5 ${montserrat.className}`}>Facilite sua vida lendo as placas de seu patrimônio utilizando o aplicativo mobile! Você também pode vincular as planilhas que cria com projetos na nuvem e monitorar tudo em tempo-real!</p>
+                            <h2 className={`${anton.className} text-leaf text-4xl text-center w-full`}>EasyInv Mobile</h2>
+                            <ul className="flex flex-col items-center justify-center mt-5 gap-6">
+                                <li className="flex gap-4">
+                                    <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaCamera className="text-white w-8 h-8"/></div>
+                                    <div>
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>LEITURA DINÂMICA</h3>
+                                        <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Oferecerá uma leitura rápida dos códigos do patrimônio, seja QRCode, Código de Barras ou Placa com o Número digitado!</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaRegFileExcel className="text-white w-8 h-8"/></div>
+                                    <div>
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>LEITURA DINÂMICA</h3>
+                                        <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Criação dinâmica de planilhas, você vai dizer o que vai ter nelas e o aplicativo cuida do resto na hora de preencher!</p>
+                                    </div>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaSyncAlt className="text-white w-8 h-8"/></div>
+                                    <div>
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>SÍNCRONIZAÇÃO COM A NUVEM</h3>
+                                        <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Os projetos criados no aplicativo podem ser vinculados com os projetos criados no sistema web! Além de acompanhar em tempo-real sempre que atualiza o projeto dentro do aplicativo!</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </li>
-                    <li className="h-full flex md:flex-row-reverse flex-col items-stretch justify-evenly md:gap-5 w-full">
+                    <li className="h-full flex md:flex-row-reverse flex-col items-center justify-evenly md:gap-5 w-full">
                         <div className="bg-[url(/images/easy-inv-computer.svg)] bg-no-repeat bg-center md:bg-cover md:w-[40vw] md:h-72 w-[80vw] h-[80vw] bg-contain"></div>
                         <div className="flex flex-col items-center md:items-start justify-center md:text-left text-center">
-                            <h2 className={`${anton.className} text-leaf text-4xl`}>EasyInv Web</h2>
-                            <p className={`w-[90vw] md:w-[30vw] text-slate-700 mt-5 ${montserrat.className}`}>Crie projetos hospedados na nuvem, onde você poderá ver informações úteis sobre seu inventário e sobre os itens que você cadastrar, além de poder vincular com as planilhas que você cria pelo seu celular</p>
+                            <h2 className={`${anton.className} text-leaf text-4xl text-center w-full`}>EasyInv Web</h2>
+                            <ul className="flex flex-col items-center justify-center mt-5 gap-6">
+                                <li className="flex flex-row-reverse text-right gap-4">
+                                    <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><BsGraphUp className="text-white w-8 h-8"/></div>
+                                    <div>
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>CRIAÇÃO DE GRÁFICOS</h3>
+                                        <p className={`md:w-[32vw] block text-slate-700 ${montserrat.className}`}>Criação fácil de gráficos e relatórios, com pouquíssimos cliques, além de informações valiosas que vão te ajudar a economizar uma grana!</p>
+                                    </div>
+                                </li>
+                                <li className="flex flex-row-reverse text-right gap-4">
+                                    <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaQrcode className="text-white w-8 h-8"/></div>
+                                    <div>
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>CRIAÇÃO DE CÓDIGOS</h3>
+                                        <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Criação dinâmica de códigos para ajudar na fabricação das placas de patrimônio!</p>
+                                    </div>
+                                </li>
+                                <li className="flex flex-row-reverse text-right gap-4">
+                                    <div className="flex items-center justify-center bg-leaf p-3 h-fit w-fit rounded-full"><FaShieldAlt className="text-white w-8 h-8"/></div>
+                                    <div>
+                                        <h3 className={`text-leaf text-2xl ${anton.className}`}>TOTALMENTE SEGURO</h3>
+                                        <p className={`md:w-[30vw] block text-slate-700 ${montserrat.className}`}>Todas as informações armazenadas nos servidores serão guardadas a 7 chaves para ninguém indesejado acessar seus dados!</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
