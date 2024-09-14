@@ -119,27 +119,47 @@ export default function Home() {
                     <UserForm/>
                 </section>
             </article>
-            <article id="teams" className="md:p-10 flex md:flex-row flex-col items-stretch justify-center">
-                <div className="flex flex-col md:justify-center w-full p-10 md:p-0">
+            <article id="teams" className="md:p-10 flex flex-col items-center justify-center">
+                <div className="flex flex-col justify-center items-center w-full p-10 md:p-0">
                     <h1 className="text-3xl font-bold mb-5 text-slate-800">Sobre o Time</h1>
-                    <p className={`${montserrat.className} md:w-[35vw] text-slate-500`}>Veja um pouco sobre o time que está trabalhando nesse projeto!</p>
+                    <p className={`${montserrat.className} text-slate-500`}>Veja um pouco sobre o time que está trabalhando nesse projeto!</p>
                 </div>
-                <ul className="flex md:flex-row flex-col md:items-center justify-center md:gap-10 md:w-[50vw] w-[90vw]">
-                    <li className="p-4 rounded-lg flex md:flex-row flex-col items-stretch justify-center gap-8">
-                        <div className="bg-[url(/images/jp-dev.JPG)] bg-cover bg-center rounded-md bg-no-repeat w-full h-64 md:w-[50vw]"></div>
+                <ul className="w-full flex flex-col md:items-center justify-center md:gap-10 md:w-[50vw]">
+                    <li className="p-4 rounded-lg flex md:flex-row flex-col items-stretch justify-between gap-8 md:w-[80vw]">
+                        <div className="bg-[url(/images/jp-dev.JPG)] bg-cover bg-center rounded-md bg-no-repeat w-full h-64 md:max-w-[260.1px]"></div>
                         <div className={`${montserrat.className} flex flex-col md:justify-between h-full`}>
                             <hgroup>
                                 <h2 className="text-lg font-bold mt-3 text-slate-800">João Pedro Jerônimo</h2>
-                                <h3 className="text-slate-800 text-sm">CEO / Developer</h3>
+                                <h3 className="text-slate-800 text-sm">CTO / Founder</h3>
                             </hgroup>
-                            <p className="md:w-[80%] w-full mt-5 text-slate-800">
-                                Experiência no ramo de desenvolvimento WEB, já trabalhou com Vue.JS, React, PHP, e NodeJS
+                            <p className="w-fit mt-5 text-slate-800">
+                                Experiência no ramo de desenvolvimento WEB, já trabalhou com Vue.JS, React, PHP, e NodeJS. Estudante de Ciência de Dados na FGV Rio de Janeiro
                             </p>
                             <ul className="flex items-center gap-2 mt-3 text-slate-800">
                                 <li className="hover:text-leaf-dark transition-colors"><a target="_blank" href="https://www.instagram.com/joao.pedro.dev/">
                                     <FaInstagram className="w-8 h-8"/>
                                 </a></li>
                                 <li className="hover:text-leaf-dark transition-colors"><a target="_blank" href="www.linkedin.com/in/joão-pedro-jerônimo-300469263">
+                                    <FaLinkedin className="w-8 h-8"/>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li className="p-4 rounded-lg flex md:flex-row flex-col items-stretch justify-between gap-8 md:w-[80vw]">
+                        <div className="bg-[url(/images/luna-pereira.jpeg)] bg-cover bg-center rounded-md bg-no-repeat h-64 md:w-[500px]"></div>
+                        <div className={`${montserrat.className} flex flex-col md:justify-between h-full`}>
+                            <hgroup>
+                                <h2 className="text-lg font-bold mt-3 text-slate-800">Luna Pereira</h2>
+                                <h3 className="text-slate-800 text-sm">CEO / Cofounder</h3>
+                            </hgroup>
+                            <p className="w-fit mt-5 text-slate-800">
+                                Estudante de Administração na FGV EBAPE. Presidente da FGValley (Liga de Empreendedorismo da FGV) e campeã da Competição de Empreendedorismo 2023 Armando Klabin
+                            </p>
+                            <ul className="flex items-center gap-2 mt-3 text-slate-800">
+                                <li className="hover:text-leaf-dark transition-colors"><a target="_blank" href="https://www.instagram.com/luna.cp/">
+                                    <FaInstagram className="w-8 h-8"/>
+                                </a></li>
+                                <li className="hover:text-leaf-dark transition-colors"><a target="_blank" href="https://www.linkedin.com/in/lunapereira/">
                                     <FaLinkedin className="w-8 h-8"/>
                                 </a></li>
                             </ul>
